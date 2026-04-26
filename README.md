@@ -1,12 +1,8 @@
 # zonetech 每日匯報
 
-LINE / LINE@ 每日進度與待辦報告。
+最新報告：
 
-## 最新報告
+- HTML：https://gaskhuang.github.io/zonetech-daily-report/web/zonetech_daily_2026-04-25.html
+- Markdown：[`reports/zonetech_daily_2026-04-25.md`](reports/zonetech_daily_2026-04-25.md)
 
-- [2026-04-25 HTML](https://gaskhuang.github.io/zonetech-daily-report/web/zonetech_daily_2026-04-25.html)
-- [2026-04-25 Markdown](reports/zonetech_daily_2026-04-25.md)
-
-## GitHub Pages
-
-https://gaskhuang.github.io/zonetech-daily-report/
+本 repo 用於發布 zonetech 每日 LINE / LINE@ 匯報。公開頁面已避免揭露完整電話、地址、銀行帳號、密碼等敏感資訊。

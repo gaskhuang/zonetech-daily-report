@@ -1,8 +1,13 @@
-# zonetech 每日匯報
+# ZoneTech Daily Report
 
-最新報告：
+Published reports for ZoneTech LINE / LINE@ operations.
 
-- [HTML：2026-04-29 10:02 LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-04-29_1002.html)
-- [Markdown：2026-04-29 10:02 LINE@ 官方帳號客戶訊息報告](reports/line_official_2026-04-29_1002.md)
+Latest LINE@ official account report: [2026-04-29 17:04](web/line_official_2026-04-29_1704.html)
 
-> 本 repo 用於發佈排程產生的 zonetech 每日報告。公開頁面已避免放入完整密碼、完整銀行帳號與完整個資。
+## Recent LINE@ Official Account Reports
+
+- [LINE@ 官方帳號 2026-04-29 1704](web/line_official_2026-04-29_1704.html) / [Markdown](reports/line_official_2026-04-29_1704.md)
+- [LINE@ 官方帳號 2026-04-29 1002](web/line_official_2026-04-29_1002.html) / [Markdown](reports/line_official_2026-04-29_1002.md)
+- [LINE@ 官方帳號 2026-04-28 1703](web/line_official_2026-04-28_1703.html) / [Markdown](reports/line_official_2026-04-28_1703.md)
+- [LINE@ 官方帳號 2026-04-27 1124](web/line_official_2026-04-27_1124.html) / [Markdown](reports/line_official_2026-04-27_1124.md)
+- [LINE@ 官方帳號 2026-04-27 1122](web/line_official_2026-04-27_1122.html) / [Markdown](reports/line_official_2026-04-27_1122.md)

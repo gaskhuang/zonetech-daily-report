@@ -2,7 +2,13 @@
 
 Published reports for ZoneTech LINE / LINE@ operations.
 
-Latest LINE@ official account report: [2026-04-29 17:04](web/line_official_2026-04-29_1704.html)
+Latest daily report: [2026-04-29 ZoneTech 每日回報](web/zonetech_daily_2026-04-29.html) ⚠️ 降級報告
+
+Latest LINE@ official account report: [2026-04-29 17:04](web/line_official_2026-04-29_1704.html) ⚠️ 降級報告
+
+## Daily Reports (每日完整回報)
+
+- [ZoneTech 每日回報 2026-04-29](web/zonetech_daily_2026-04-29.html) / [Markdown](reports/zonetech_daily_2026-04-29.md) ⚠️ 降級報告
 
 ## Recent LINE@ Official Account Reports
 

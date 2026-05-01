@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<title>LINE@ 官方帳號客戶訊息報告 — 2026-05-01 17:00</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  color: #58a6ff;
+  font-size: 1.5rem;
+  margin: 16px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #30363d;
+}
+h2 {
+  color: #f0883e;
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+}
+h3 {
+  color: #d2a8ff;
+  font-size: 1.05rem;
+  margin: 14px 0 8px;
+}
+p, li { font-size: 0.92rem; }
+ul, ol { padding-left: 20px; margin: 8px 0; }
+li { margin: 3px 0; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.warn-banner {
+  background: #da3633;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-weight: bold;
+}
+.warn-banner code { background: rgba(255,255,255,0.2); padding: 1px 5px; border-radius: 3px; }
+.degraded {
+  background: #1b1f23;
+  border-left: 4px solid #f0883e;
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  margin: 12px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.85rem;
+  display: block;
+  overflow-x: auto;
+}
+th, td {
+  border: 1px solid #30363d;
+  padding: 8px 10px;
+  text-align: left;
+}
+th {
+  background: #161b22;
+  color: #f0f6fc;
+  font-weight: 600;
+  white-space: nowrap;
+}
+tr:nth-child(even) { background: #0d1117; }
+tr:nth-child(odd) { background: #161b22; }
+code {
+  background: #161b22;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  color: #7ee787;
+}
+hr { border: none; border-top: 1px solid #30363d; margin: 16px 0; }
+.footer {
+  color: #8b949e;
+  font-size: 0.8rem;
+  margin-top: 24px;
+  text-align: center;
+  border-top: 1px solid #30363d;
+  padding-top: 12px;
+}
+.meta {
+  color: #8b949e;
+  font-size: 0.84rem;
+}
+.urgent-row td { background: #3d1f1f !important; }
+.tag { 
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.tag-red { background: #da3633; color: #fff; }
+.tag-orange { background: #f0883e; color: #fff; }
+.tag-blue { background: #58a6ff; color: #fff; }
+.tag-green { background: #3fb950; color: #fff; }
+.tag-purple { background: #b392f0; color: #fff; }
+blockquote {
+  border-left: 3px solid #30363d;
+  padding: 4px 12px;
+  margin: 8px 0;
+  color: #8b949e;
+}
+</style>
+</head>
+<body>
+
+<h1>LINE@ 官方帳號客戶訊息報告 — 2026-05-01 17:00</h1>
+
+<div class="meta">
+<p>目標訊息範圍：2026-04-30 00:00–2026-05-01 17:00（Asia/Taipei）</p>
+<p>上下文範圍：2026-04-29 00:00–目前</p>
+<p>GitHub Pages：<a href="https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-01_1700.html">本頁</a></p>
+</div>
+
+<div class="warn-banner">
+⚠️ 降級報告 — LINE@ API 回傳 <code>401 not_login</code>（登入逾時），本報告僅從頁面可見快取擷取。無法確認所有聊天室都已掃描，也無法讀取實際訊息內容。
+</div>
+
+<h2>⚠️ 最高優先事項：需重新登入 LINE Business</h2>
+
+<div class="degraded">
+<p>LINE@ 官方帳號管理頁面 Session 已逾時，API 回傳 <code>401 not_login</code>。</p>
+<ul>
+<li>無法透過 API 撈取完整聊天列表與訊息</li>
+<li>無法確認所有客戶訊息都已涵蓋</li>
+<li>無法讀取新訊息（May 1 上午的訊息可能未出現在快取中）</li>
+</ul>
+<p><strong>建議：立即由管理者手動重新登入 <code>https://manager.line.biz/</code></strong></p>
+</div>
+
+<h2>1. 緊急需回覆 / 高風險</h2>
+
+<table>
+<tr><th>#</th><th>客戶</th><th>預覽</th><th>分類</th><th>Owner</th></tr>
+<tr class="urgent-row"><td>1</td><td>岩究所-馬克</td><td>主機運回＋直播設備＋運費</td><td><span class="tag tag-orange">排程/商機</span></td><td>工程＋業務</td></tr>
+<tr class="urgent-row"><td>2</td><td>亞洲藝術(西華***)</td><td>「請測試看看」</td><td><span class="tag tag-red">緊急技術</span></td><td>工程</td></tr>
+<tr class="urgent-row"><td>3</td><td>亞洲藝術 Annis</td><td>「請問可以通話嗎」</td><td><span class="tag tag-blue">客服</span></td><td>業務</td></tr>
+<tr class="urgent-row"><td>4</td><td>璞之妍資訊設備</td><td>「現在還能怎麼做」</td><td><span class="tag tag-red">技術/客訴</span></td><td>工程＋業務</td></tr>
+<tr class="urgent-row"><td>5</td><td>德宜國際</td><td>「掃描存到哪個資料夾」</td><td><span class="tag tag-purple">技術支援</span></td><td>工程</td></tr>
+<tr class="urgent-row"><td>6</td><td>三普旅行社</td><td>POE供電確認</td><td><span class="tag tag-purple">技術支援</span></td><td>工程</td></tr>
+<tr class="urgent-row"><td>7</td><td>光鈦媒體-林先生</td><td>USB無線網卡推薦</td><td><span class="tag tag-purple">技術諮詢</span></td><td>工程</td></tr>
+</table>
+
+<h2>2. 依分類整理</h2>
+
+<h3>2.1 緊急技術/客訴</h3>
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th><th>備註</th></tr>
+<tr><td>亞洲藝術(西華***)</td><td>未讀</td><td>「請測試看看」</td><td>網路設定後測試</td></tr>
+<tr><td>璞之妍資訊設備</td><td>未讀</td><td>「現在還能怎麼做」</td><td>語氣略急</td></tr>
+<tr><td>德宜國際</td><td>未讀</td><td>「掃描存到哪」</td><td>操作問題</td></tr>
+<tr><td>三普旅行社</td><td>未讀</td><td>POE供電確認</td><td>無線環境建置</td></tr>
+<tr><td>光鈦媒體-林先生</td><td>記事本</td><td>USB無線網卡推薦</td><td>技術諮詢</td></tr>
+</table>
+
+<h3>2.2 報價/商機</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>岩究所-馬克</td><td>主機運回＋直播設備需求（複合）</td></tr>
+<tr><td>聯發國際餐飲 Ethan</td><td>「預計抓12支」</td></tr>
+<tr><td>永恆突觸 Hanson</td><td>「有」 — 前文不明</td></tr>
+<tr><td>Liang</td><td>個人租借筆電</td></tr>
+<tr><td>Lin Louis林昱汋</td><td>租賃詢問（自動回覆已發）</td></tr>
+<tr><td>筆電租賃-叁人創</td><td>貼圖（內容不明）</td></tr>
+</table>
+
+<h3>2.3 財務/收款/發票</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>CBC商務中心</td><td>「已匯款，請查收」— 需確認入帳</td></tr>
+<tr><td>知識衛星_宛凌</td><td>email 相關（應為帳務）</td></tr>
+<tr><td>荷風國際Melly Sun</td><td>內網設備安全掃描確認（混合技術）</td></tr>
+</table>
+
+<h3>2.4 排程/施工</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>容易文創</td><td>「想改約週二」</td></tr>
+<tr><td>家庭雲端 MIS群</td><td>「好 謝謝」</td></tr>
+<tr><td>林律</td><td>「麻煩再按一次接受」</td></tr>
+</table>
+
+<h3>2.5 採購/物流</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>Netgear 業務/採購群</td><td>「歡迎參觀」</td></tr>
+</table>
+
+<h3>2.6 一般客服</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>亞洲藝術 Annis</td><td>「請問可以通話嗎」</td></tr>
+<tr><td>知識衛星子祺 Blake</td><td>貼圖（無法讀取）</td></tr>
+<tr><td>黑獅實業</td><td>貼圖（無法讀取）</td></tr>
+<tr><td>鈦客星(楚云)</td><td>檔案傳送（附件需人工確認）</td></tr>
+<tr><td>私享旅遊</td><td>「OK,週一」</td></tr>
+<tr><td>華傑電影_珮綺</td><td>貼圖（無法讀取）</td></tr>
+<tr><td>成功市場 Allen</td><td>「謝謝」</td></tr>
+<tr><td>胡朕瑋 碩仁補習班</td><td>貼圖（無法讀取）</td></tr>
+<tr><td>亞洲藝術中心</td><td>貼圖（無法讀取）</td></tr>
+<tr><td>埕珈室內裝修</td><td>「感謝」</td></tr>
+<tr><td>雅丰生髮中心 羽蓁Angel</td><td>「孔」— 內容不明</td></tr>
+<tr><td>曾國川</td><td>照片（附件需人工確認）</td></tr>
+</table>
+
+<h3>2.7 其他</h3>
+<table>
+<tr><th>客戶</th><th>摘要</th></tr>
+<tr><td>最準行銷SEO</td><td>5/23 合作直播工作坊邀請</td></tr>
+</table>
+
+<h2>3. 明確待辦清單</h2>
+
+<table>
+<tr><th>#</th><th>事項</th><th>Owner</th><th>期限</th></tr>
+<tr style="background:#3d1f1f"><td>1</td><td><strong>重新登入 LINE Business</strong></td><td>管理者</td><td>立即</td></tr>
+<tr><td>2</td><td>確認岩究所直播設備需求</td><td>業務＋工程</td><td>5/2</td></tr>
+<tr><td>3</td><td>確認 CBC 匯款入帳</td><td>財務</td><td>5/2</td></tr>
+<tr><td>4</td><td>回覆亞洲藝術 Annis 通話</td><td>業務</td><td>5/2</td></tr>
+<tr><td>5</td><td>測試亞洲藝術西華網路</td><td>工程</td><td>5/2</td></tr>
+<tr><td>6</td><td>處理璞之妍設備問題</td><td>工程＋業務</td><td>5/2</td></tr>
+<tr><td>7</td><td>回覆德宜國際掃描問題</td><td>工程</td><td>5/2</td></tr>
+<tr><td>8</td><td>確認三普旅行社 POE</td><td>工程</td><td>5/2</td></tr>
+<tr><td>9</td><td>回覆光鈦媒體 USB 網卡</td><td>工程</td><td>5/2</td></tr>
+<tr><td>10</td><td>確認聯發國際「12支」需求</td><td>業務</td><td>5/2</td></tr>
+<tr><td>11</td><td>確認容易文創改約排程</td><td>業務</td><td>5/2</td></tr>
+<tr><td>12</td><td>回覆最準行銷SEO直播邀約</td><td>管理者</td><td>5/5</td></tr>
+<tr><td>13</td><td>確認宛凌 email 帳務</td><td>財務</td><td>5/2</td></tr>
+<tr><td>14</td><td>人工檢查貼圖/照片/檔案</td><td>客服</td><td>5/2</td></tr>
+</table>
+
+<h2>4. 可信度與限制</h2>
+
+<table>
+<tr><th>項目</th><th>狀態</th></tr>
+<tr><td>LINE@ API</td><td style="color:#da3633">❌ 401 not_login — Session 逾時</td></tr>
+<tr><td>資料來源</td><td>頁面可見 DOM 快取</td></tr>
+<tr><td>已掃描聊天室</td><td>~31 個（僅 sidebar 可見）</td></tr>
+<tr><td>實際訊息讀取</td><td>無 — 僅 sidebar 預覽</td></tr>
+<tr><td>附件處理</td><td>貼圖/照片/檔案無法讀取</td></tr>
+<tr><td>May 1 上午訊息</td><td>⚠️ 覆蓋不完整</td></tr>
+<tr><td>時間精確度</td><td>低 — 僅「昨天」標記</td></tr>
+<tr><td>涵蓋範圍</td><td style="color:#f0883e">⚠️ 非完整覆蓋</td></tr>
+</table>
+
+<div class="degraded" style="margin-top:20px">
+⚠️ <strong>本報告為降級報告</strong>。LINE Business 登入已逾時，API 無法使用。待重新登入後建議重新生成完整報告。
+</div>
+
+<div class="footer">
+Generated at 2026-05-01 17:00 Asia/Taipei · repo: gaskhuang/zonetech-daily-report
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LINE@ 官方帳號客戶訊息報告 — 2026-05-02 10:00</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+  line-height: 1.7;
+  padding: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+h1 { font-size: 1.3rem; color: #f8fafc; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #334155; }
+h2 { font-size: 1.15rem; color: #e2e8f0; margin: 20px 0 10px; }
+h3 { font-size: 1.05rem; color: #cbd5e1; margin: 16px 0 8px; }
+hr { border: none; border-top: 1px solid #334155; margin: 20px 0; }
+p { margin: 8px 0; }
+ul, ol { padding-left: 24px; margin: 8px 0; }
+li { margin: 4px 0; }
+strong { color: #f1f5f9; font-weight: 600; }
+code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; color: #fbbf24; }
+pre { background: #1e293b; padding: 12px; border-radius: 8px; overflow-x: auto; margin: 12px 0; }
+pre code { background: none; padding: 0; color: #e2e8f0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+th { background: #1e293b; color: #f8fafc; padding: 8px 10px; text-align: left; font-weight: 600; border-bottom: 2px solid #475569; }
+td { padding: 8px 10px; border-bottom: 1px solid #334155; }
+tr:last-child td { border-bottom: none; }
+a { color: #60a5fa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.degraded-banner {
+  background: #7c2d12;
+  border: 1px solid #9a3412;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  color: #fed7aa;
+}
+</style>
+</head>
+<body>
+<h1>LINE@ 官方帳號客戶訊息報告 — 2026-05-02 10:00</h1>
+
+<li><strong>目標訊息範圍</strong>：2026-05-01（昨日）00:00–2026-05-02 10:00 CST</li>
+<li><strong>上下文範圍</strong>：2026-04-30（前日）00:00–2026-05-02 10:00 CST</li>
+<li><strong>報告生成時間</strong>：2026-05-02 10:00 CST</li>
+<li><strong>GitHub Pages URL</strong>：https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-02_1000.html</li>
+
+<hr>
+
+<h2>⚠️ 資料來源狀態：降級報告</h2>
+
+<p><strong>LINE Business 已登出。</strong> 瀏覽器目前顯示 <code>account.line.biz/login</code> 登入頁面，LINE@ API (<code>/api/v2/bots/...</code>) 無法呼叫。此為降級報告，<strong>未讀取到任何客戶訊息</strong>。</p>
+
+<table>
+<tr><th>項目</th><th>狀態</th></tr>
+<tr><td>Chrome CDP</td><td>✅ 正常運行（port 55012）</td></tr>
+<tr><td>LINE@ 頁面狀態</td><td>❌ 已登出，顯示登入頁面（附 reCAPTCHA 驗證）</td></tr>
+<tr><td>LINE@ API</td><td>❌ 無法呼叫（未登入）</td></tr>
+<tr><td>讀取聊天室數量</td><td>0</td></tr>
+<tr><td>讀取訊息數量</td><td>0</td></tr>
+</table>
+
+<hr>
+
+<h2>1. 緊急需回覆 / 高風險</h2>
+
+<p><strong><span style="color:#fbbf24">⚠️</span> 無法報告</strong> — 因 LINE Business 已登出，無法讀取任何客戶訊息。無法判斷是否有緊急需回覆的客戶。</p>
+
+<hr>
+
+<h2>2. 依分類整理所有客戶訊息</h2>
+
+<p><strong><span style="color:#fbbf24">⚠️</span> 無資料</strong> — LINE@ API 未成功呼叫，無任何客戶訊息可供分類。</p>
+
+<hr>
+
+<h2>3. 明確待辦清單</h2>
+
+<table>
+<tr><th>優先度</th><th>Owner</th><th>下一步</th><th>建議期限</th></tr>
+<tr><td>🔴 **最高**</td><td>管理者</td><td>**重新登入 LINE Business**（`account.line.biz`），完成 reCAPTCHA 驗證後以 LINE 帳號或 QR Code 登入</td><td>**立即**</td></tr>
+<tr><td>🔴 **最高**</td><td>管理者</td><td>登入後手動檢視 LINE@ 昨日（5/1）所有客戶訊息，確認是否有遺漏回覆</td><td>今日 12:00 前</td></tr>
+<tr><td>🟡 中</td><td>管理者</td><td>登入後確認 17:00 的自動報告能正常抓取 LINE@ API</td><td>今日 17:00 前</td></tr>
+</table>
+
+<hr>
+
+<h2>4. 可信度與限制</h2>
+
+<li><strong>LINE@ API</strong>：<span style="color:#f87171">❌</span> 未成功呼叫。瀏覽器停留在 <code>account.line.biz/login</code> 登入頁面，LINE Business ID session 已逾時。</li>
+<li><strong>登入限制</strong>：登入頁面附有 Google reCAPTCHA 驗證，需要人工操作完成。</li>
+<li><strong>已讀取聊天室</strong>：0 個（目標範圍內無任何資料）</li>
+<li><strong>已讀取訊息</strong>：0 則</li>
+<li><strong>附件限制</strong>：無法判斷是否有圖片、檔案、貼圖等附件訊息</li>
+<li><strong>本報告覆蓋率</strong>：0%（未讀取任何訊息）</li>
+<li><strong>建議</strong>：完成 LINE Business 重新登入後，今天 17:00 的自動報告應可恢復正常 API 讀取。</li>
+
+</body>
+</html>

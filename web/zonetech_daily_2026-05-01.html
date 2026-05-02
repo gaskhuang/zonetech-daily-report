@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZoneTech 每日報告 — 2026-05-01</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #0a0a0f; color: #d4d4d8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif;
+  line-height: 1.7; padding: 16px; max-width: 800px; margin: 0 auto;
+  font-size: 15px;
+}
+h1 { color: #00d4aa; font-size: 1.5em; margin: 24px 0 12px; border-bottom: 2px solid #00d4aa33; padding-bottom: 8px; }
+h2 { color: #ffb86c; font-size: 1.2em; margin: 20px 0 10px; }
+h3 { color: #66aaff; font-size: 1.05em; margin: 16px 0 8px; }
+a { color: #66aaff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+p, li { margin: 6px 0; }
+ul, ol { padding-left: 20px; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #1e1e2e; }
+th { background: #16162a; color: #a0a0b8; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+tr:hover { background: #111122; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; margin-right: 4px; }
+.badge-red { background: #ff444433; color: #ff4444; }
+.badge-orange { background: #ffb86c33; color: #ffb86c; }
+.badge-yellow { background: #ffd70033; color: #ffd700; }
+.badge-blue { background: #66aaff33; color: #66aaff; }
+.badge-green { background: #00d4aa33; color: #00d4aa; }
+.badge-gray { background: #66666633; color: #999; }
+.alert { padding: 12px 16px; border-radius: 8px; margin: 12px 0; }
+.alert-red { background: #ff444410; border: 1px solid #ff444433; }
+.alert-orange { background: #ffb86c10; border: 1px solid #ffb86c33; }
+.alert-blue { background: #66aaff10; border: 1px solid #66aaff33; }
+.alert-gray { background: #66666610; border: 1px solid #333; }
+.chat-card { background: #111122; border: 1px solid #1e1e2e; border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+.chat-card .name { color: #00d4aa; font-weight: 600; }
+.chat-card .meta { color: #888; font-size: 12px; }
+.status-pending { color: #ffb86c; }
+.status-done { color: #66aaff; }
+.status-urgent { color: #ff4444; font-weight: 600; }
+.muted { color: #666; font-size: 13px; }
+.section-header { background: #16162a; padding: 8px 12px; border-radius: 6px 6px 0 0; font-weight: 600; color: #a0a0b8; font-size: 13px; }
+.footer { color: #555; font-size: 11px; margin-top: 40px; padding: 16px 0; border-top: 1px solid #1e1e2e; text-align: center; }
+code { background: #16162a; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>📋 ZoneTech 每日 LINE 報告</h1>
+
+<p class="muted">
+  📅 目標日期：<strong>2026-05-01（週五）</strong> 00:00–23:59<br>
+  🕐 生成時間：2026-05-02 08:09（Asia/Taipei）<br>
+  📡 資料範圍：2026-04-30 00:00 起上下文 + 2026-05-01 全天<br>
+  🔗 <a href="https://github.com/gaskhuang/zonetech-daily-report">GitHub Repo</a> ·
+  <a href="https://gaskhuang.github.io/zonetech-daily-report/">報告首頁</a>
+</p>
+
+<!-- STATUS ALERT -->
+<div class="alert alert-orange">
+  <strong>⚠️ 降級報告</strong><br>
+  <strong>LINE@ 官方帳號</strong>：Session 逾時（API 回傳 401），僅取得 sidebar 聊天列表 + 1 個完整對話。<br>
+  <strong>個人 LINE 群組</strong>：<span class="status-urgent">無法讀取</span> — Chrome 封鎖 LINE extension 頁面。<br><br>
+  <strong>建議</strong>：管理者手動登入 <code>manager.line.biz</code> 並開啟 LINE extension 頁面後，重新執行報告。
+</div>
+
+<!-- TOP 10 PRIORITY -->
+<h2>🔴 今日最優先處理</h2>
+<table>
+  <tr><th>#</th><th>客戶</th><th>事項</th><th>行動</th></tr>
+  <tr>
+    <td>1</td>
+    <td><strong>光鈦媒體-林先生</strong></td>
+    <td><span class="badge badge-red">5/6 搬家日</span> 移機+NAS+設備</td>
+    <td>確認 OA 家具、排工程師 5/6 到場</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><strong>岩究所-馬克</strong></td>
+    <td>主機運回＋直播設備需求</td>
+    <td>確認運費、安排運回、報價建議</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><strong>璞之妍資訊設備</strong></td>
+    <td><span class="status-urgent">「現在還能怎麼做」</span></td>
+    <td>立即了解問題、判斷是否客訴</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><strong>亞洲藝術(西華 37F)</strong></td>
+    <td>「請測試看看」</td>
+    <td>確認網路安裝測試結果</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>亞洲藝術 Annis</strong></td>
+    <td>「請問可以通話嗎」</td>
+    <td>安排回電</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><strong>德宜國際</strong></td>
+    <td>掃描存放路徑疑問</td>
+    <td>提供操作指引</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><strong>三普旅行社</strong></td>
+    <td>POE 供電確認</td>
+    <td>檢查 POE switch</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><strong>容易文創</strong></td>
+    <td>「可以改週二嗎」</td>
+    <td>確認改期可行性並回覆</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><strong>CBC 商務中心</strong></td>
+    <td>「已匯款」</td>
+    <td>確認收款、更新帳務</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><strong>聯發國際餐飲</strong></td>
+    <td>「預計抓 12 支」</td>
+    <td>確認規格、準備報價</td>
+  </tr>
+</table>
+
+<!-- LINE@ SECTION -->
+<h2>📱 LINE@ 客戶訊息回報</h2>
+
+<h3>🚨 技術支援 / 施工跟進</h3>
+<table>
+  <tr><th>客戶</th><th>未讀</th><th>最後訊息</th><th>狀態</th></tr>
+  <tr><td><strong>光鈦媒體-林先生</strong></td><td>—</td><td>搬家移機 5/6，USB 網卡推薦</td><td><span class="status-pending">待處理</span></td></tr>
+  <tr><td><strong>岩究所-馬克</strong></td><td>—</td><td>主機運回＋直播設備需求</td><td><span class="status-pending">待處理</span></td></tr>
+  <tr><td><strong>亞洲藝術(西華 37F)</strong></td><td>(5)</td><td>請測試看看</td><td><span class="status-pending">待處理</span></td></tr>
+  <tr><td><strong>璞之妍資訊設備</strong></td><td>(4)</td><td><span class="status-urgent">現在還能怎麼做</span></td><td><span class="status-pending">待處理</span></td></tr>
+  <tr><td><strong>德宜國際</strong></td><td>(3)</td><td>掃描存到哪個資料夾</td><td><span class="status-pending">待處理</span></td></tr>
+  <tr><td><strong>三普旅行社</strong></td><td>(5)</td><td>確認 POE 供電</td><td><span class="status-pending">待處理</span></td></tr>
+</table>
+
+<h3>💰 點數合約客戶</h3>
+<table>
+  <tr><th>客戶</th><th>未讀</th><th>最後訊息</th></tr>
+  <tr><td>容易文創X蓋斯克</td><td>(7)</td><td>可以改週二嗎</td></tr>
+  <tr><td>璞之妍資訊設備</td><td>(4)</td><td><span class="status-urgent">現在還能怎麼做</span></td></tr>
+  <tr><td>CBC 商務中心</td><td>(15)</td><td>已匯款，請查收</td></tr>
+  <tr><td>荷風國際 Melly Sun</td><td>—</td><td>內網設備安全掃描疑問</td></tr>
+  <tr><td>黑獅實業</td><td>(6)</td><td>傳送貼圖</td></tr>
+  <tr><td>亞洲藝術中心</td><td>(5)</td><td>傳送貼圖</td></tr>
+  <tr><td>家庭雲端 MIS 群</td><td>(18)</td><td>好 謝謝</td></tr>
+</table>
+
+<h3>📋 訂閱制客戶</h3>
+<table>
+  <tr><th>客戶</th><th>未讀</th><th>最後訊息</th></tr>
+  <tr><td>光鈦媒體-林先生</td><td>—</td><td>USB 無線網卡推薦（見下方對話摘要）</td></tr>
+  <tr><td>亞洲藝術(西華 37F)</td><td>(5)</td><td>請測試看看</td></tr>
+  <tr><td>三普旅行社</td><td>(5)</td><td>POE 供電確認</td></tr>
+  <tr><td>私享旅遊</td><td>(3)</td><td>OK，週一</td></tr>
+</table>
+
+<h3>💻 電腦租賃</h3>
+<table>
+  <tr><th>客戶</th><th>未讀</th><th>最後訊息</th></tr>
+  <tr><td>永恆突觸 Hanson</td><td>(4)</td><td>有</td></tr>
+  <tr><td>筆電租賃-叁人創</td><td>(3)</td><td>康先生傳送貼圖</td></tr>
+  <tr><td>Lin Louis 林昱汋</td><td>—</td><td>新客戶詢問筆電租賃用途</td></tr>
+  <tr><td>Liang</td><td>—</td><td>個人使用可否租借筆電</td></tr>
+</table>
+
+<h3>🏢 一般客戶</h3>
+<table>
+  <tr><th>客戶</th><th>未讀</th><th>最後訊息</th></tr>
+  <tr><td>知識衛星子祺 Blake</td><td>(5)</td><td>莊唯中傳送貼圖</td></tr>
+  <tr><td>亞洲藝術 Annis(財務)</td><td>—</td><td><span class="status-urgent">請問可以通話嗎</span></td></tr>
+  <tr><td>聯發國際餐飲 Ethan</td><td>—</td><td>預計抓 12 支</td></tr>
+  <tr><td>知識衛星_宛凌(財務)</td><td>—</td><td>wendywu@sat.cool</td></tr>
+  <tr><td>埕珈室內裝修設計</td><td>—</td><td>感謝</td></tr>
+  <tr><td>雅丰生髮中心 羽蓁</td><td>—</td><td>孔</td></tr>
+  <tr><td>華傑電影製作</td><td>—</td><td>貼圖</td></tr>
+  <tr><td>成功市場 Allen</td><td>(3)</td><td>謝謝</td></tr>
+  <tr><td>胡朕瑋 碩仁補習班</td><td>—</td><td>貼圖</td></tr>
+  <tr><td>曾國川</td><td>—</td><td>傳送照片</td></tr>
+</table>
+
+<h3>🤝 合作夥伴 / 內部</h3>
+<table>
+  <tr><th>對象</th><th>未讀</th><th>最後訊息</th></tr>
+  <tr><td>Netgear 業務/採購群</td><td>(6)</td><td>@All 歡迎參觀，請告知來訪時間</td></tr>
+  <tr><td>最準行銷SEO</td><td>(13)</td><td>5/23 合作直播工作坊邀請</td></tr>
+  <tr><td>鈦客星(楚云)</td><td>(6)</td><td>bill 傳送檔案</td></tr>
+  <tr><td>林律</td><td>(5)</td><td>麻煩再按一次接受</td></tr>
+</table>
+
+<!-- KEY CONVERSATION -->
+<h2>🔍 重點對話：光鈦媒體-林先生</h2>
+<div class="alert alert-blue">
+  <strong>唯一完整讀取的對話</strong>（33 則訊息）— 光鈦媒體正在搬遷辦公室
+</div>
+
+<div class="chat-card">
+  <div class="name">訂閱制x光鈦媒體-林先生</div>
+  <div class="meta">33 則訊息 · 4/14–5/1</div>
+</div>
+
+<p><strong>關鍵日期：5/6（四天後）</strong></p>
+<ul>
+  <li>🏢 中華電信移機 + NAS 及其他設備移機</li>
+  <li>🪑 OA 辦公家具定位時間待確認</li>
+  <li>🔧 工程師需到場安裝</li>
+</ul>
+
+<p><strong>財務</strong>：4/15 已收到 $21,200，發票開立完成</p>
+<p><strong>技術</strong>：林先生詢問 USB 無線網卡 → 已推薦 TP-Link TXE70UH / TX20UH</p>
+<p><strong>狀態</strong>：4/15 後無新對話記錄（API 不可用，實際可能有新訊息）</p>
+
+<!-- PERSONAL LINE -->
+<h2>👥 個人 LINE 重要群組</h2>
+<div class="alert alert-red">
+  <strong>❌ 無法讀取</strong><br>
+  Chrome 封鎖 LINE extension 頁面 (<code>ERR_BLOCKED_BY_CLIENT</code>)，以下 8 個群組無法擷取：<br>
+  <span class="muted">工程回報區 · 業務討論群 · 匯款群組 · 會計財務人事 · 公司專區 · 業務回報區 · 採購群組 · 業助客服群組</span>
+</div>
+
+<!-- TODO -->
+<h2>✅ 明確待辦清單</h2>
+
+<h3>🔴 立即（今天 5/2）</h3>
+<table>
+  <tr><th>#</th><th>事項</th><th>負責</th></tr>
+  <tr><td>1</td><td>重新登入 LINE@ 管理後台</td><td>Gask</td></tr>
+  <tr><td>2</td><td>開啟 LINE extension 頁面解除封鎖</td><td>Gask</td></tr>
+  <tr><td>3</td><td>確認光鈦媒體 5/6 工程排班</td><td>工程</td></tr>
+  <tr><td>4</td><td>聯絡岩究所-馬克：運費＋設備建議</td><td>工程/業務</td></tr>
+  <tr><td>5</td><td>查看璞之妍對話內容</td><td>工程/業務</td></tr>
+  <tr><td>6</td><td>回覆亞洲藝術 Annis 通話請求</td><td>業務</td></tr>
+</table>
+
+<h3>🟠 今日內</h3>
+<table>
+  <tr><th>#</th><th>事項</th><th>負責</th></tr>
+  <tr><td>7</td><td>確認亞洲藝術(西華)測試結果</td><td>工程</td></tr>
+  <tr><td>8</td><td>確認三普旅行社 POE 供電</td><td>工程</td></tr>
+  <tr><td>9</td><td>回覆容易文創改期</td><td>業務</td></tr>
+  <tr><td>10</td><td>確認 CBC 匯款入帳</td><td>會計</td></tr>
+  <tr><td>11</td><td>確認聯發國際 12 支需求</td><td>業務</td></tr>
+  <tr><td>12</td><td>回覆德宜國際掃描問題</td><td>工程</td></tr>
+  <tr><td>13</td><td>回覆筆電租賃諮詢（林昱汋、Liang）</td><td>業務</td></tr>
+  <tr><td>14</td><td>決定是否參加最準行銷 5/23 直播</td><td>Gask</td></tr>
+</table>
+
+<h3>🟡 追蹤</h3>
+<table>
+  <tr><th>#</th><th>事項</th><th>負責</th></tr>
+  <tr><td>15</td><td>荷風國際內網掃描解釋</td><td>工程</td></tr>
+  <tr><td>16</td><td>Netgear 業務群來訪安排</td><td>Gask</td></tr>
+</table>
+
+<!-- STATS -->
+<h2>📊 本日統計</h2>
+<table>
+  <tr><td>LINE@ 有活動聊天室</td><td><strong>31</strong></td></tr>
+  <tr><td>待處理（未回）</td><td><strong>~30</strong></td></tr>
+  <tr><td>完整讀取對話</td><td>1（光鈦媒體）</td></tr>
+  <tr><td>個人 LINE 群組</td><td><span class="status-urgent">0/8</span></td></tr>
+  <tr><td>資料覆蓋率</td><td><span class="status-urgent">~15%</span></td></tr>
+</table>
+
+<div class="footer">
+  <p>Generated by Hermes Agent · <a href="https://github.com/gaskhuang/zonetech-daily-report">gaskhuang/zonetech-daily-report</a></p>
+  <p>⚠️ 降級報告 — 建議重新登入後重新生成完整報告</p>
+</div>
+
+</body>
+</html>

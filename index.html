@@ -1,87 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZoneTech Daily Report</title>
+<title>ZoneTech 每日報告 | LINE@ 官方帳號</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #0f0f12; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; line-height: 1.6; padding: 20px; max-width: 700px; margin: 0 auto; }
-h1 { color: #00d4aa; font-size: 1.4em; margin: 20px 0 16px; }
-h2 { color: #ffb86c; font-size: 1.1em; margin: 20px 0 10px; }
-ul { list-style: none; padding: 0; }
-li { margin: 8px 0; font-size: 14px; }
-li a { color: #66aaff; text-decoration: none; }
-li a:hover { text-decoration: underline; }
-.date { color: #888; font-size: 12px; margin-left: 8px; }
-.type { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-right: 6px; }
-.type-line { background: #00d4aa33; color: #00d4aa; }
-.type-daily { background: #66aaff33; color: #66aaff; }
-.type-ops { background: #ffb86c33; color: #ffb86c; }
-.footer { color: #666; font-size: 11px; margin-top: 40px; padding-top: 16px; border-top: 1px solid #2a2a3e; text-align: center; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a2e; color: #e0e0e0; padding: 24px; line-height: 1.6; max-width: 800px; margin: 0 auto; }
+h1 { font-size: 1.5em; color: #00d4aa; margin-bottom: 8px; }
+.subtitle { color: #888; font-size: 0.9em; margin-bottom: 24px; }
+.report-list { list-style: none; }
+.report-list li { padding: 12px 16px; margin: 8px 0; background: #1e1e32; border-radius: 6px; border-left: 3px solid #00d4aa; transition: background 0.2s; }
+.report-list li:hover { background: #25253d; }
+.report-list a { color: #4ecdc4; text-decoration: none; font-size: 1.05em; }
+.report-list .date { color: #888; font-size: 0.85em; display: block; margin-top: 2px; }
+.report-list .source { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.75em; margin-left: 6px; }
+.source-line { background: #00d4aa22; color: #00d4aa; }
+.source-combined { background: #ffd93d22; color: #ffd93d; }
+.footer { margin-top: 32px; font-size: 0.75em; color: #555; border-top: 1px solid #333; padding-top: 16px; }
 </style>
 </head>
 <body>
-<h1>📋 ZoneTech Daily Report</h1>
-<p style="color:#888;font-size:13px;margin-bottom:20px;">
-  LINE@ 官方帳號客戶訊息每日報告 — 由 Hermes Agent 自動生成
-</p>
-
-<h2>📊 每日合併報告（LINE@ + 個人 LINE）</h2>
-<ul>
-  <li>
-    <span class="type type-daily">每日</span>
-    <a href="web/zonetech_daily_2026-05-01.html">2026-05-01 每日報告</a>
-    <span class="date">⚠️ 降級（LINE@ session 逾時）</span>
-  </li>
+<h1>📊 ZoneTech 每日報告</h1>
+<p class="subtitle">LINE@ 官方帳號客戶訊息報告 — 自動化每日彙整</p>
+<ul class="report-list">
+<li>
+<a href="web/line_official_2026-05-04_1000.html">LINE@ 官方帳號客戶訊息報告 — 2026-05-04 10:00</a>
+<span class="date">2026-05-04 上午 | 目標範圍：05/03 00:00 – 05/04 10:00</span>
+<span class="source source-line">LINE@ 官方帳號</span>
+</li>
+<li>
+<a href="web/line_official_2026-05-03_1700.html">LINE@ 官方帳號客戶訊息報告 — 2026-05-03 17:00</a>
+<span class="date">2026-05-03 下午</span>
+<span class="source source-line">LINE@ 官方帳號</span>
+</li>
+<li>
+<a href="web/line_official_2026-05-03_1000.html">LINE@ 官方帳號客戶訊息報告 — 2026-05-03 10:00</a>
+<span class="date">2026-05-03 上午</span>
+<span class="source source-line">LINE@ 官方帳號</span>
+</li>
 </ul>
-
-<h2>🔔 LINE@ 官方帳號報告</h2>
-<ul>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-03_1700.html">2026-05-03 17:00 報告</a>
-    <span class="date">⬅️ 最新 ✅ 正常</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-03_1000.html">2026-05-03 10:00 報告</a>
-    <span class="date">✅ 正常</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-02_1700.html">2026-05-02 17:00 報告</a>
-    <span class="date">⚠️ 降級（LINE Business 已登出）</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-02_1000.html">2026-05-02 10:00 報告</a>
-    <span class="date">⚠️ 降級（LINE Business 已登出）</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-01_1700.html">2026-05-01 17:00 報告</a>
-    <span class="date">更新於 2026-05-01</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-05-01_1001.html">2026-05-01 10:01 報告</a>
-    <span class="date">更新於 2026-05-01</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-04-30_1723.html">2026-04-30 17:23 報告</a>
-    <span class="date">更新於 2026-05-01</span>
-  </li>
-  <li>
-    <span class="type type-line">LINE@</span>
-    <a href="web/line_official_2026-04-29_1015.html">2026-04-29 10:15 報告</a>
-    <span class="date">更新於 2026-04-30</span>
-  </li>
-</ul>
-
 <div class="footer">
-  <p>Generated by Hermes Agent · <a href="https://github.com/gaskhuang/zonetech-daily-report" style="color:#888;">GitHub Repo</a></p>
+<p>ZoneTech Daily Report · Powered by Hermes Agent · <a href="https://github.com/gaskhuang/zonetech-daily-report" style="color:#4ecdc4">GitHub Repo</a></p>
 </div>
 </body>
 </html>

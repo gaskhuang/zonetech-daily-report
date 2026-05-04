@@ -9,7 +9,8 @@ LINE@ 官方帳號客戶訊息每日報告 — 自動生成並發布到 GitHub P
 
 ### LINE@ 官方帳號報告
 
-- **2026-05-04 10:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-04_1000.html) ⬅️ 最新 ✅ 正常
+- **2026-05-04 17:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-04_1700.html) ⬅️ 最新 ✅ 正常
+- **2026-05-04 10:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-04_1000.html) ✅ 正常
 - **2026-05-03 17:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-03_1700.html) ✅ 正常
 - **2026-05-03 10:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-03_1000.html) ✅ 正常
 - **2026-05-02 17:00** — [LINE@ 官方帳號客戶訊息報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-02_1700.html) ⚠️ 降級（LINE Business 已登出）

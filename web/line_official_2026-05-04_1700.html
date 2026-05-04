@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>LINE@ 官方帳號客戶訊息報告 — 2026-05-04 17:00</title>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #c9d1d9; --text2: #8b949e; --accent: #58a6ff;
+    --red: #f85149; --yellow: #d2991d; --green: #3fb950;
+    --purple: #a371f7; --blue: #79c0ff; --white: #e6edf3;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+    padding: 0; max-width: 800px; margin: 0 auto;
+  }
+  .container { padding: 16px; }
+  h1 { font-size: 1.3em; margin: 16px 0 8px; color: var(--accent); }
+  h2 { font-size: 1.15em; margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h2.red { color: var(--red); } h2.yellow { color: var(--yellow); }
+  h2.green { color: var(--green); } h2.purple { color: var(--purple); }
+  h2.blue { color: var(--blue); } h2.white { color: var(--white); }
+  h3 { font-size: 1em; margin: 16px 0 8px; color: var(--text); }
+  .meta { color: var(--text2); font-size: 0.85em; margin-bottom: 16px; }
+  .meta span { margin-right: 16px; }
+  .meta .ok { color: var(--green); }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px; margin-bottom: 10px;
+  }
+  .card.urgent { border-left: 3px solid var(--red); }
+  .card.warn { border-left: 3px solid var(--yellow); }
+  .card.done { border-left: 3px solid var(--green); }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+  .card-title { font-weight: 600; font-size: 0.95em; }
+  .card-badge { font-size: 0.72em; padding: 2px 7px; border-radius: 10px; white-space: nowrap; }
+  .badge-red { background: rgba(248,81,73,0.15); color: var(--red); }
+  .badge-yellow { background: rgba(210,153,29,0.15); color: var(--yellow); }
+  .badge-green { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-purple { background: rgba(163,113,247,0.15); color: var(--purple); }
+  .card-body { margin-top: 6px; font-size: 0.88em; color: var(--text2); }
+  .card-footer { margin-top: 8px; font-size: 0.78em; color: var(--text2); display: flex; gap: 12px; flex-wrap: wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; margin: 8px 0 16px; }
+  th, td { padding: 8px 6px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--card); color: var(--text2); font-weight: 600; white-space: nowrap; position: sticky; top: 0; }
+  tr:hover { background: rgba(255,255,255,0.03); }
+  td:nth-child(2) { white-space: nowrap; }
+  ul { padding-left: 20px; margin: 8px 0; list-style: none; }
+  li { margin-bottom: 8px; font-size: 0.88em; }
+  li::before { content: '▸ '; color: var(--text2); }
+  .section-desc { color: var(--text2); font-size: 0.85em; margin-bottom: 12px; }
+  .limit-table { width: 100%; }
+  .limit-table td { padding: 6px 8px; font-size: 0.85em; }
+  .limit-table td:first-child { font-weight: 600; width: 120px; }
+  .ok-text { color: var(--green); } .warn-text { color: var(--yellow); }
+  .priority { color: var(--red); font-weight: 700; }
+  .tag { display: inline-block; font-size: 0.72em; padding: 1px 6px; border-radius: 8px; margin-right: 4px; }
+  .tag-urgent { background: rgba(248,81,73,0.12); color: var(--red); }
+  .tag-biz { background: rgba(210,153,29,0.12); color: var(--yellow); }
+  .tag-finance { background: rgba(63,185,80,0.12); color: var(--green); }
+  .tag-schedule { background: rgba(121,192,255,0.12); color: var(--blue); }
+  .tag-procure { background: rgba(163,113,247,0.12); color: var(--purple); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+  .footer { text-align: center; color: var(--text2); font-size: 0.75em; padding: 20px 0; }
+  @media (max-width: 600px) {
+    .card-header { flex-direction: column; }
+    table { font-size: 0.78em; }
+    th, td { padding: 6px 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>LINE@ 官方帳號客戶訊息報告 — 2026-05-04 17:00</h1>
+<div class="meta">
+  <span>目標範圍：05/03 00:00 – 05/04 23:59</span>
+  <span>上下文：05/02 00:00 – 05/04 23:59</span><br>
+  <span>資料源：<span class="ok">✅ LINE@ API（已登入）</span></span>
+  <span>掃描：<span class="ok">50 chats / 302 events</span></span><br>
+  <span>GitHub Pages：<a href="https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-04_1700.html">本頁</a></span>
+</div>
+
+<!-- SECTION 1: URGENT -->
+<h2 class="red">🔴 1. 緊急需回覆 / 高風險</h2>
+<div class="section-desc">最後一則訊息來自客戶、尚未回覆的聊天室</div>
+
+<div class="card urgent">
+  <div class="card-header">
+    <span class="card-title">亞洲藝術中心</span>
+    <span class="card-badge badge-red">⚠️ 最高優先</span>
+  </div>
+  <div class="card-body">客戶三次催促處理進度（10:19、09:54、14:08），tag官方帳號詢問「目前處理的狀況如何呢？」，需向老闆說明。</div>
+  <div class="card-footer">
+    <span>最後訊息：05/04 14:08（~3h）</span>
+    <span>分類：緊急技術/客訴</span>
+    <span>下一步：立即回覆處理狀況</span>
+    <span>Owner：工程/管理者</span>
+  </div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">訂閱制 私享旅遊</span>
+    <span class="card-badge badge-yellow">排程/施工</span>
+  </div>
+  <div class="card-body">客戶傳照片，先前約定5點AnyDesk遠端。確認遠端是否已完成。</div>
+  <div class="card-footer"><span>最後訊息：05/04 17:01（&lt;1h）</span><span>Owner：工程</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">弱電廠商諮詢群</span>
+    <span class="card-badge badge-yellow">排程/施工</span>
+  </div>
+  <div class="card-body">現場安裝中，多筆即時訊息+照片，討論自動盒尺寸/插座/資訊孔。確認現場安裝進度。</div>
+  <div class="card-footer"><span>最後訊息：05/04 16:52（&lt;1h）</span><span>Owner：工程</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">精誠資訊 - 劉小姐 CoCo Liu</span>
+    <span class="card-badge badge-purple">採購/物流</span>
+  </div>
+  <div class="card-body">已確認防火牆採購完成，客戶回貼圖。確認出貨排程。</div>
+  <div class="card-footer"><span>最後訊息：05/04 16:40（&lt;1h）</span><span>Owner：業務</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">大慶旅行社</span>
+    <span class="card-badge badge-yellow">一般客服</span>
+  </div>
+  <div class="card-body">@客服詢問安裝進度：「<em>請問一下目前進度到哪裡? 可以來安裝嗎?</em>」</div>
+  <div class="card-footer"><span>最後訊息：05/04 16:26（&lt;1h）</span><span>Owner：工程/業務</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">三普旅行社 曾益軒Michael</span>
+    <span class="card-badge badge-red">緊急技術</span>
+  </div>
+  <div class="card-body">詢問UniFi訊號切換：「若使用者連unifiA訊號不好時 能由unifi控制網頁手動改連unifiB嗎」</div>
+  <div class="card-footer"><span>最後訊息：05/04 14:37（~2.5h）</span><span>Owner：工程</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">光鈦媒體-林先生</span>
+    <span class="card-badge badge-blue">排程/施工</span>
+  </div>
+  <div class="card-body">通知中華電信明天下午網路會弄好。確認明天下午安排。</div>
+  <div class="card-footer"><span>最後訊息：05/04 14:22（~2.5h）</span><span>Owner：工程</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">鈦客星(楚云) x 蓋斯克</span>
+    <span class="card-badge badge-yellow">報價/商機</span>
+  </div>
+  <div class="card-body">客戶回「好 等等報」（岩究所新主機報價）。確認報價已產出。</div>
+  <div class="card-footer"><span>最後訊息：05/04 14:00（~3h）</span><span>Owner：業務</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">湛揚 x 蓋斯克</span>
+    <span class="card-badge badge-green">財務/收款</span>
+  </div>
+  <div class="card-body">通知已匯款，發票號碼YY68686871、金額$10,521。確認入帳。</div>
+  <div class="card-footer"><span>最後訊息：05/04 12:56（~4h）</span><span>Owner：財務</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">BNI steven x 蓋斯克 網路建置</span>
+    <span class="card-badge badge-yellow">報價/商機</span>
+  </div>
+  <div class="card-body">討論管理權限移交問題，客戶擔心資安疑慮。提供分層權限方案建議。</div>
+  <div class="card-footer"><span>最後訊息：05/04 11:29（~5.5h）</span><span>Owner：工程/業務</span></div>
+</div>
+
+<div class="card warn">
+  <div class="card-header">
+    <span class="card-title">泰永 Hu Winney</span>
+    <span class="card-badge badge-blue">排程/施工</span>
+  </div>
+  <div class="card-body">新同仁需安裝點陣式印表機（線上協助）。安排遠端。</div>
+  <div class="card-footer"><span>最後訊息：05/04 15:48（~1h）</span><span>Owner：工程</span></div>
+</div>
+
+<div class="card done">
+  <div class="card-header">
+    <span class="card-title">已處理/可結案（今日）</span>
+    <span class="card-badge badge-green">共 5 則</span>
+  </div>
+  <div class="card-body">
+    暘基醫院_溫建融（網路問題已解決✅）、最準行銷SEO（案例確認✅）、雅丰生髮中心（網路正常✅）、MIS溝通群組（信箱已處理✅）、Huai chin🐾（已回覆僅服務企業✅）
+  </div>
+</div>
+
+<!-- SECTION 2: BY CATEGORY -->
+<h2>2. 依分類整理所有客戶訊息</h2>
+
+<h3>🔴 緊急技術 / 客訴</h3>
+<div class="section-desc">共 11 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>南光醫院網路設備更新</strong></td><td><span class="card-badge badge-green">✅</span></td><td>全棟網路中斷經排查恢復，工程師到場，14:02已恢復</td></tr>
+<tr><td><strong>亞洲藝術中心</strong></td><td><span class="card-badge badge-red">🔴</span></td><td>三次催促處理進度，需向老闆說明 — <strong>最高優先</strong></td></tr>
+<tr><td><strong>容易文創💗珍妮~~</strong></td><td><span class="card-badge badge-green">✅ 已回</span></td><td>辦公室網路問題，15:03回覆四點到場</td></tr>
+<tr><td><strong>競捷</strong></td><td><span class="card-badge badge-green">✅</span></td><td>Adobe授權提示，遠端處理完成</td></tr>
+<tr><td><strong>瓦特塔波-陳小姐</strong></td><td><span class="card-badge badge-green">✅</span></td><td>Office需求，已回覆不提供破解版</td></tr>
+<tr><td><strong>無界塾</strong></td><td><span class="card-badge badge-green">✅</span></td><td>SSID/MAC binding說明，已回覆</td></tr>
+<tr><td><strong>璞之妍資訊設備</strong></td><td>我方最後</td><td>備份方式已變更說明</td></tr>
+<tr><td><strong>三普旅行社(曾益軒)</strong></td><td><span class="card-badge badge-red">⚠️</span></td><td>UniFi訊號切換技術問題待回</td></tr>
+<tr><td><strong>三普旅行社(無線環境)</strong></td><td><span class="card-badge badge-red">⚠️</span></td><td>POE供電異常分析待回</td></tr>
+<tr><td><strong>弱電廠商諮詢群</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>現場安裝即時溝通</td></tr>
+<tr><td><strong>林律</strong></td><td><span class="card-badge badge-green">✅</span></td><td>QR code測試成功，已提供教學</td></tr>
+</table>
+
+<h3>🟡 報價 / 商機</h3>
+<div class="section-desc">共 4 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>聯發國際餐飲 Ethan</strong></td><td><span class="card-badge badge-green">✅</span></td><td>電視/壁掛/迷你電腦/NVR/投影機報價需求，待出報價單</td></tr>
+<tr><td><strong>岩究所-馬克</strong></td><td><span class="card-badge badge-green">✅</span></td><td>新主機報價（文書+直播），待出報價單</td></tr>
+<tr><td><strong>鈦客星(楚云)</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>客戶回「好 等等報」，確認報價產出</td></tr>
+<tr><td><strong>BNI steven</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>管理權限移交討論，待提供方案</td></tr>
+</table>
+
+<h3>🟢 財務 / 收款 / 發票</h3>
+<div class="section-desc">共 10 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>湛揚 x 蓋斯克</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>已匯款$10,521，發票YY68686871，確認入帳</td></tr>
+<tr><td><strong>睿至</strong></td><td>我方最後</td><td>催款$15,750</td></tr>
+<tr><td><strong>衛波科技</strong></td><td><span class="card-badge badge-green">✅</span></td><td>4/30匯款，U數已新增</td></tr>
+<tr><td><strong>倍新生技</strong></td><td>我方最後</td><td>驗收單待回簽</td></tr>
+<tr><td><strong>新呈工業</strong></td><td><span class="card-badge badge-green">✅</span></td><td>驗收單已回簽</td></tr>
+<tr><td><strong>俐富</strong></td><td>我方最後</td><td>驗收單待回簽（網路架構重整+整線）</td></tr>
+<tr><td><strong>美達科技</strong></td><td><span class="card-badge badge-green">✅</span></td><td>新任資訊人員聯絡方式已取得</td></tr>
+<tr><td><strong>品成-Chris</strong></td><td><span class="card-badge badge-green">✅</span></td><td>新增2U確認完成</td></tr>
+<tr><td><strong>CBC商務中心</strong></td><td>我方最後</td><td>已通知會計確認，週三過去</td></tr>
+<tr><td><strong>荷風國際</strong></td><td>我方最後</td><td>安全說明（非病毒攻擊）</td></tr>
+</table>
+
+<h3>🔵 排程 / 施工</h3>
+<div class="section-desc">共 4 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>私享旅遊</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>約定5點AnyDesk遠端</td></tr>
+<tr><td><strong>容易文創X蓋斯克</strong></td><td>我方最後</td><td>確認明天下午過去</td></tr>
+<tr><td><strong>光鈦媒體</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>中華電信明天下午完工</td></tr>
+<tr><td><strong>泰永</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>遠端安裝印表機</td></tr>
+</table>
+
+<h3>🟣 採購 / 物流</h3>
+<div class="section-desc">共 2 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>精誠資訊</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>防火牆採購確認，待出貨通知</td></tr>
+<tr><td><strong>恆悅美學牙醫</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>筆電待寄回，追蹤狀態</td></tr>
+</table>
+
+<h3>⚪ 一般客服</h3>
+<div class="section-desc">共 8 個聊天室</div>
+
+<table>
+<tr><th>客戶</th><th>狀態</th><th>摘要</th></tr>
+<tr><td><strong>大慶旅行社</strong></td><td><span class="card-badge badge-yellow">⚠️</span></td><td>詢問安裝進度</td></tr>
+<tr><td><strong>雅丰生髮中心</strong></td><td><span class="card-badge badge-green">✅</span></td><td>網路已正常</td></tr>
+<tr><td><strong>最準行銷SEO</strong></td><td><span class="card-badge badge-green">✅</span></td><td>案例連結已確認</td></tr>
+<tr><td><strong>Liang</strong></td><td><span class="card-badge badge-green">✅</span></td><td>個人租賃，已回覆僅服務企業</td></tr>
+<tr><td><strong>Huai chin🐾</strong></td><td><span class="card-badge badge-green">✅</span></td><td>同上</td></tr>
+<tr><td><strong>MIS溝通群組</strong></td><td><span class="card-badge badge-green">✅</span></td><td>信箱問題已自行處理</td></tr>
+<tr><td><strong>神通</strong></td><td><span class="card-badge badge-green">✅</span></td><td>三個客戶網域開通/續約確認完成</td></tr>
+<tr><td><strong>甜家群組</strong></td><td>我方最後</td><td>待工程師確認調整時間</td></tr>
+</table>
+
+<hr class="divider">
+
+<!-- SECTION 3: TODO -->
+<h2>3. 明確待辦清單</h2>
+
+<table>
+<tr><th>#</th><th>事項</th><th>Owner</th><th>下一步</th><th>期限</th></tr>
+<tr><td>1</td><td><span class="priority">亞洲藝術中心：回覆處理進度</span></td><td>工程/管理者</td><td>立即回覆目前處理狀況</td><td><strong>今日</strong></td></tr>
+<tr><td>2</td><td>聯發國際餐飲：出報價單</td><td>業務</td><td>電視/壁掛/迷你電腦/NVR/投影機報價</td><td>05/05</td></tr>
+<tr><td>3</td><td>岩究所：新主機報價單</td><td>業務</td><td>文書+直播主機報價</td><td>05/05</td></tr>
+<tr><td>4</td><td>確認湛揚匯款入帳</td><td>財務</td><td>核對$10,521入帳</td><td>05/05</td></tr>
+<tr><td>5</td><td>倍新生技：追蹤驗收單</td><td>業務</td><td>確認客戶回簽</td><td>05/06</td></tr>
+<tr><td>6</td><td>俐富：追蹤驗收單</td><td>業務</td><td>確認客戶回簽（網路架構重整+整線）</td><td>05/06</td></tr>
+<tr><td>7</td><td>三普旅行社(曾益軒)：技術回覆</td><td>工程</td><td>UniFi訊號切換/min RSSI設定</td><td>05/05</td></tr>
+<tr><td>8</td><td>三普旅行社(無線環境)：POE分析</td><td>工程</td><td>分析POE供電異常，確認是否到場</td><td>05/05</td></tr>
+<tr><td>9</td><td>光鈦媒體：確認明天施工安排</td><td>工程</td><td>確認中華電信完工後續</td><td>05/05</td></tr>
+<tr><td>10</td><td>泰永：遠端安裝印表機</td><td>工程</td><td>線上協助安裝點陣式印表機</td><td>05/05</td></tr>
+<tr><td>11</td><td>精誠資訊：確認防火牆出貨</td><td>業務</td><td>通知客戶出貨排程</td><td>05/05</td></tr>
+<tr><td>12</td><td>BNI steven：管理權限方案</td><td>工程/業務</td><td>提供分層權限方案建議</td><td>05/06</td></tr>
+<tr><td>13</td><td>大慶旅行社：回覆安裝進度</td><td>工程/業務</td><td>回覆進度與預計時間</td><td>05/05</td></tr>
+<tr><td>14</td><td>恆悅美學牙醫：追蹤筆電</td><td>業務</td><td>追蹤客戶筆電寄回狀態</td><td>05/06</td></tr>
+<tr><td>15</td><td><span class="priority">弱電廠商諮詢群：確認現場安裝</span></td><td>工程</td><td>確認今日現場安裝完成狀態</td><td><strong>今日</strong></td></tr>
+<tr><td>16</td><td><span class="priority">私享旅遊：確認遠端完成</span></td><td>工程</td><td>確認AnyDesk遠端已完成</td><td><strong>今日</strong></td></tr>
+<tr><td>17</td><td>睿至：追蹤$15,750款項</td><td>財務</td><td>繼續追蹤未結清款項</td><td>05/07</td></tr>
+</table>
+
+<hr class="divider">
+
+<!-- SECTION 4: CREDIBILITY -->
+<h2>4. 可信度與限制</h2>
+
+<table class="limit-table">
+<tr><td>API 連線</td><td><span class="ok-text">✅ 正常</span> — LINE@ in-page fetch 成功，已登入</td></tr>
+<tr><td>聊天室掃描</td><td>50 個聊天室已掃描，40 個在目標範圍內有活動</td></tr>
+<tr><td>訊息讀取</td><td>共 302 則事件（189 客戶 + 113 我方），283 則在目標時間窗內</td></tr>
+<tr><td>分頁完整性</td><td><span class="ok-text">✅</span> API 已跟隨 next/backward 分頁直到時間戳早於上下文範圍</td></tr>
+<tr><td>附件讀取</td><td><span class="warn-text">⚠️</span> 圖片/貼圖/影片/音訊/檔案可識別類型但無法讀取內容文字，需人工確認</td></tr>
+<tr><td>通話紀錄</td><td><span class="warn-text">⚠️</span> callHistory 事件僅顯示通話發生，無法判斷內容或結果</td></tr>
+<tr><td>個人 LINE</td><td>未掃描（本報告範圍僅限 LINE@ 官方帳號）</td></tr>
+<tr><td>已讀/未讀</td><td><span class="warn-text">⚠️</span> 工具運作過程中可能觸發 markAsRead，以 LINE App 實際狀態為準</td></tr>
+</table>
+
+<div class="footer">
+  <p>由 Hermes Agent 自動生成 · 2026-05-04 17:00 CST</p>
+  <p><a href="https://gaskhuang.github.io/zonetech-daily-report/">ZoneTech Daily Report</a></p>
+</div>
+
+</div>
+</body>
+</html>

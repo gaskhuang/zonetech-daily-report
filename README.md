@@ -4,6 +4,7 @@
 
 ## 最新報告
 
+- [2026-05-06 17:01 LINE@ 官方帳號報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-06_1701.html)
 - [2026-05-06 10:07 LINE@ 官方帳號報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-06_1007.html)
 - [2026-05-05 17:24 LINE@ 官方帳號報告](https://gaskhuang.github.io/zonetech-daily-report/web/line_official_2026-05-05_1724.html)
 - [2026-05-05 報告目錄](https://gaskhuang.github.io/zonetech-daily-report/)
